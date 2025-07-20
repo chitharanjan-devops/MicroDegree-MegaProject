@@ -13,7 +13,7 @@ docker build -t microdegree-app .
 #### 2. Run Docker Container (pass AWS RDS details)
 
 ```bash
-docker run -d -p 5000:5000 \
+docker run -d -p 80:5000 \
   -e RDS_HOST="your-rds-endpoint" \
   -e RDS_USER="your-rds-username" \
   -e RDS_PASSWORD="your-rds-password" \
